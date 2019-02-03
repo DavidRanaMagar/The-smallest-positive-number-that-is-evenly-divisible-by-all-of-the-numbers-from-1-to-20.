@@ -2,7 +2,7 @@ package dividedfrom1to20;
 
 public class Smallest {
 	public static int a(int i,int k) {
-		if(i==1) {
+		if(i<=1) {
 			return k%i;
 		}
 		else {
