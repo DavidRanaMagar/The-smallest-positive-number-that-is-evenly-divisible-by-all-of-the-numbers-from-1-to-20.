@@ -1,0 +1,22 @@
+package dividedfrom1to20;
+
+Algorithm
+I have used recursive method to solve the problem: to find the smallest positive number divisible from 1 to 20;
+there are two integer parameter 1st one represent the number up to which the the given number should be divisible.
+if we want to find the number divisible from 1 to 10 then the 1st parameter will be 10 and if we want to find the 
+number divisible from 1 to 15 then the 1st parameter will be 15. the second parameter is the number that we compare
+if that number is divisible up to given number.
+i.e: a(int i,int k)
+
+first if statement checks if the entered 1st parameter is less than or equal to 1
+if true return the modulus of enter number and the divide number
+if false it returns the modulus of 2nd entered parameter and 1st plus the recursive method with 1s parameter minus 1 and same 2nd parameter;
+
+this method only return 0 if enter number is divisibled by all the value from 0 to entered 1st parameter.
+i.e:
+	if(i<=1) {
+			return k%i;
+		}
+		else {
+			return k%i+a(i-1,k);
+		}
